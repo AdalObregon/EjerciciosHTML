@@ -49,6 +49,129 @@ atributos que nos permiten definir el tamaño, color, estilo, etc.-->
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, possimus earum alias delectus explicabo expedita iure totam neque veniam esse dolores tempore minima non deleniti impedit dolore iste itaque aperiam.
     </p>
 
+<!-- Etiquetas divisorias y separadores hr y br
+
+    hr nos sirve para dar una separación entre parrafos (veremos una línea horizontal que usaremos de separador. No necesita una etiqueta de cierre).
+
+    <hr> automaticamente aplica el estilo
+
+-->
+
+<!--
+    Etiquetas de enlace <a> </a>
+
+    Los enlaces nos permiten la navegacion por medio de hipervinculos o links que van a realizar la conexion y referencias otros archivos o paginas web dentro de la misma aplicacion o de manera externa.
+
+    Atributos de la etiqueta <a>
+
+    href: atributo que nos permite definir la ubicacion de la pagina a la que nos vamos a enlazar. Este atributo puede ser una URL, o una ubicacion dentro de nuestra carpeta de assets. Pondremos dentro de las comillas la direccion de la pagina o recurso que queremos enlazar.
+
+    target: el atributo que nos permite definir la ventana de destino, que puede ser una nueva ventana o la misma.
+        - _blank: abre una nueva venta
+        - _self: abrir en la misma venta, este es el atributo por defecto.
+-->
+
+<a href="#">Este es un enlace, como no tiene ninguna referencia no hace nada</a>
+<br>
+<br>
+<a href="https://www.google.com" target="_blank">Visita la pagina de Google para buscar mas fotos de perritos playeros</a>
+
+<a href="./assets/perritoplayero.jpg" target="_blank">Foto de perrito playero</a>
+
+<!--Otros enlaces que nos pueden servir mas adelante
+
+    -Enlaces de correo: Para vincular correos.
+
+    mailto: adalobregoon@gmail.com
+
+    -Enlaces de descarga: Dentro del atributo hrref='' se puede colocar la dirección
+    de la página o archivo de la pagina que se va a descargar, y el valor download que nos
+    permite definir el nombre del archivo que se descargara.
+-->
+    <br>
+    <br>
+    <a href="mailto:adalobregoon@gmail.com">Enviame un correo electronico!</a>
+    <a href="./assets/perritoplayero.jpg" download>Descarga la foto del perrito playero</a>
+
+    <!--
+        Etiquetas de listas ordenadas, desordenadas y listas de definiciones.
+        (ul, ol, dl)
+
+        Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página. Estos elementos irán precedidos por un guión o número.
+
+        Los tipos de listas que tenemos en HTMl son:
+
+        - Listas ordenadas: Son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden, tendremos los elementos numeros, es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden. Las listas ordenadas se representan mediante la etiqueta ol.
+
+        Atibutos de listas ordenadas:
+
+        - start para definir el orden inicial, por defecto es 1
+        - type pra indicar el tipo de lista que se va a crear
+            - decimal para numeros enteros (default)
+            - lower-alpha para letras minusculas (A)
+            - lower -roman para letras minusculas en romano (I)
+            - upper-alpha para letras mayusculas (a)
+            - upper-roman para mayuscas en romano (i)
+        - reversed: para invertir el orden de los elementos
+
+        - Listas desordenadas: Las listas desordenadas son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedido por una viñeta que puede ser un punto, un cuadrado, etc.
+
+        Atributos de listas desordenadas:
+            - style para definir el estilo de la lista
+                - circle
+                - disc
+                - square
+
+        - Listas de definiciones: Son aquellas que nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien puede ser cualquier par valor-definicion.
+
+     -->
+
+     <h3>Esta es una lista ordenada de perritos sin atributos</h3>
+
+     <ol> <!--Order List-->
+        <li>Dalmata</li> <!--List Item-->
+        <li>Labrador</li>
+        <li>Chihuahua</li>
+        <li>Pitbull</li>
+     </ol>
+
+     <h3>Esta es una lista ordenada de perritos con atributos</h3>
+
+     <ol type="I" start="I">
+        <li>Dalmata</li>
+        <li>Labrador</li>
+        <li>Chihuahua</li>
+        <li>Pitbull</li>
+     </ol>
+
+     <h3>Esta es una lista desordenada de perritos sin atributos</h3>
+
+     <ul> <!--Order List-->
+        <li>Dalmata</li> <!--List Item-->
+        <li>Labrador</li>
+        <li>Chihuahua</li>
+        <li>Pitbull</li>
+     </ul>
+
+     <h3>Esta es una lista desordenada de perritos con atributos</h3>
+
+     <ul type="square"> <!--Order List-->
+        <li>Dalmata</li> <!--List Item-->
+        <li>Labrador</li>
+        <li>Chihuahua</li>
+        <li>Pitbull</li>
+     </ul>
+
+     <h3>Lista de definiciones</h3>
+
+     <dl> <!--definition list-->
+         <dt>Gato</dt> <!--definition term!-->
+         <dd>Mamífero carnívoro de la familia de los Félidos, digitígrado, doméstico, de unos cinco decímetros de largo desde la cabeza hasta el arranque de la cola, que por sí sola mide dos decímetros aproximadamente. Pareciera que planean dominar al mundo</dd>
+         <dt>Perro</dt>
+         <dd>Mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño. Es el mejor amigo del hombre</dd>
+     </dl>
+     
 </body>
+<!--Aqui termina el cuerpo de nuestro documento-->
 
 </html>
